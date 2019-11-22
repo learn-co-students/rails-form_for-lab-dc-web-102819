@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+	<%= form_for @school_class do |f| %>
+		<%= f.label :title %>
+		<%= f.text_field :title%>
+		<%= f.label :room_number %>
+		<%= f.number_field :room_number %>
+		<%= f.submit submit_text %>
+	<%end%>
+
+</body>
+</html>
