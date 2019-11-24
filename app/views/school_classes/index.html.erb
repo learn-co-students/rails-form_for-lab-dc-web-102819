@@ -1,0 +1,7 @@
+<h1> School Classes </h1>
+
+<ul>
+	<% @classes.each do |session| %>
+		<li><%= link_to session.title, school_class_path(session) %></li>
+	<% end %>
+</ul>
